@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "PirateFont";
+  src: url("/src/assets/fonts/PirateFont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.pirate-title {
+  font-family: "PirateFont", cursive;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+
+.section-title {
+  font-family: "PirateFont", cursive;
+  text-align: center;
+  margin: 4rem 0 2rem;
+  line-height: 1;
+}
+
+/* 🔥 First letter (Drop Cap style) */
+.title-first {
+  font-size: clamp(5rem, 9vw, 8rem);   /* ⬆️ much bigger */
+  color: #b22222;
+  font-weight: 900;
+  margin-right: 0.15em;
+
+  text-shadow:
+    3px 3px 0 #3b2414,
+    6px 6px 18px rgba(0,0,0,0.8);
+}
+.title-rest {
+  font-size: clamp(2.8rem, 6vw, 4.2rem); /* ⬆️ bigger */
+  color: #babcca;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+
+  text-shadow:
+    2px 2px 0 #3b2414,
+    4px 4px 14px rgba(0,0,0,0.7);
+}
+
+
+.section-content {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 1.5rem 2rem;
+
+  font-family: "IM Fell English", serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  line-height: 1.9;
+
+  color: #2b1d0e; /* ink color */
+
+  background: rgba(245, 230, 200, 0.18); /* parchment feel */
+  border-left: 5px solid #3b2414;
+
+  text-shadow: 0.5px 0.5px 0 rgba(0,0,0,0.2);
+}
+
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+
+  /* layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* spacing */
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 4rem);
+
+  /* smooth section separation */
+  scroll-margin-top: 80px;
+}
